@@ -2,9 +2,9 @@
     margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    height: 100%;
     box-sizing: border-box;
 }
 
@@ -22,4 +22,84 @@
     --accent2: #D2D3DA;
     --accent3: #4B5EFC;
     --text: #000000;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 6px 12px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    user-select: none;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.btn {
+    background: var(--accent1);
+    color: var(--text);
+    height: 72px;
+    width: 100%;
+    border-radius: 24px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Poppins';
+}
+
+.row:first-child > .btn {
+    background: var(--accent2);
+}
+
+.btn:last-child {
+    background: var(--accent3) !important;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.btn > svg {
+    fill: var(--text);
+}
+
+.theme-switch {
+    width: 64px;
+    height: 24px;
+    background: var(--accent1);
+    border-radius: 16px;
+    margin-top: 1rem;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    background: var(--accent2);
+    border-radius: 50%;
+}
+
+#icon-light {
+    display: none;
 }
