@@ -7,3 +7,19 @@
 	vertical-align: baseline;
     box-sizing: border-box;
 }
+
+:root[theme="dark"] {
+    --bg-color: #17171C;
+    --accent1: #2E2F38;
+    --accent2: #4E505F;
+    --accent3: #4B5EFC;
+    --text: #FFFFFF;
+}
+
+:root[theme="light"] {
+    --bg-color: #F1F2F3;
+    --accent1: #FFFFFF;
+    --accent2: #D2D3DA;
+    --accent3: #4B5EFC;
+    --text: #000000;
+}
