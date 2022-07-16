@@ -69,8 +69,8 @@ body {
     background: var(--accent2);
 }
 
-.btn:last-child {
-    background: var(--accent3) !important;
+.row > .btn:last-child {
+    background: var(--accent3);
     color: #fff;
     font-size: 3rem;
 }
